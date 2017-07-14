@@ -36,7 +36,11 @@
 			document.addEventListener('mousemove',Move);
 			document.addEventListener('mouseup',Up);
 			
-			
+			function Move(ev){
+				//console.log(11);
+				box.style.left = ev.clientX - disX + 'px';
+				box.style.top = ev.clientY - disY + 'px';
+			}
 			ev.preventDefault();
 			
 		});
