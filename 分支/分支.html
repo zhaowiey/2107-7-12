@@ -36,10 +36,16 @@
 			document.addEventListener('mousemove',Move);
 			document.addEventListener('mouseup',Up);
 			
+<<<<<<< HEAD
 			function Move(ev){
 				//console.log(11);
 				box.style.left = ev.clientX - disX + 'px';
 				box.style.top = ev.clientY - disY + 'px';
+=======
+			function Up(){
+				document.removeEventListener('mousemove',Move);
+				document.removeEventListener('mouseup',Up);
+>>>>>>> up
 			}
 			ev.preventDefault();
 			
