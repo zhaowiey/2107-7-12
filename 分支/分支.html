@@ -36,7 +36,10 @@
 			document.addEventListener('mousemove',Move);
 			document.addEventListener('mouseup',Up);
 			
-			
+			function Up(){
+				document.removeEventListener('mousemove',Move);
+				document.removeEventListener('mouseup',Up);
+			}
 			ev.preventDefault();
 			
 		});
